@@ -5,11 +5,11 @@ import ticket from "../assets/images/icon/ticket.png";
 
 const Navbar = () => {
   return (
-    <div className="sticky top-0 w-full h-[10vh] xl:h-[15vh] border-b flex items-center justify-between">
-      <div className="w-1/5 h-full flex items-center">
+    <div className="sticky z-[100] bg-white border-x-0 top-0 w-full h-[10vh] xl:h-[12vh] border-b flex items-center justify-between overflow-x-hidden">
+      <div className="flex items-center w-1/5 h-full">
         <Link to={`/`}>
           <img
-            className="py-[10%] pl-10 pr-5 md:border-r md:border-zinc-200 max-w-72"
+            className="py-[10%] pl-10 pr-5 md:border-r md:border-zinc-200 max-w-72 "
             src={logo}
             alt=""
           />
