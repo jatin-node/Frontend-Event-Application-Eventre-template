@@ -27,7 +27,7 @@ const Aboutus = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-2 sm:gap-5 lg:gap-10">
             <button className="font-serif uppercase px-3 py-2 lg:px-[15%] lg:py-[5%] text-nowrap bg-[#ff6600] hover:bg-orange-600 text-white duration-300">
-              <Link to="/">buy ticket</Link>
+              <Link to="/ticket-buy">buy ticket</Link>
             </button>
             <button className="font-serif uppercase border-[1px] px-3 py-2 lg:px-[15%] lg:py-[5%] text-nowrap bg-white hover:bg-[#ff6600] hover:text-white duration-300">
               <Link to="/">read more</Link>
