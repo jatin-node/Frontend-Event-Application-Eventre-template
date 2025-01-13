@@ -1,28 +1,42 @@
-import React from "react";
+import React, { useRef } from "react";
 import Navbar from "../components/Navbar";
 import HomepageBanner from "../components/HomepageBanner";
 import Aboutus from "../components/Aboutus";
-import backgroundSpeakerImage from "../assets/images/background/spaeker-background.jpg";
 import EventSchedule from "../components/EventSchedule";
 import Speakers from "../components/Speakers";
+import Register from "../components/Register";
+import Feature from "../components/Feature";
+import Sponsers from "../components/Sponsers";
+import Ticket from "../components/Ticket";
+import TicketBuy from "../components/TicketBuy";
+import Footer from "../components/Footer";
 
 const Home = () => {
+  const ticketBuyRef = useRef(null);
+
+  const scrollToTicketBuy = () => {
+    ticketBuyRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="w-screen h-screen overflow-x-hidden">
-      <Navbar />
-      <HomepageBanner />
+      <Navbar scrollToTicketBuy={scrollToTicketBuy} />
+      <HomepageBanner scrollToTicketBuy={scrollToTicketBuy} />
       <Aboutus />
-      <div
-        style={{
-          background: `url(${backgroundSpeakerImage}) fixed`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-        className="w-full  bg-red-50"
-      >
-        <Speakers />
+      <Speakers showBackground={true} />
+      <EventSchedule download={false} />
+
+      <div className="w-full h-[150vh] lg:h-[60%]  flex flex-col lg:flex-row">
+        <Feature />
+        <Register />
       </div>
-      <EventSchedule />
+
+      <div ref={ticketBuyRef}>
+        <TicketBuy />
+      </div>
+      <Ticket />
+      <Sponsers />
+      <Footer />
     </div>
   );
 };

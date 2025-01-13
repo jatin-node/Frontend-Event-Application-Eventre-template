@@ -3,9 +3,8 @@ import { Link } from "react-router-dom";
 
 const Card = ({ cardImage }) => {
   const [ishovered, setisHovered] = useState(false);
-  console.log(ishovered);
   return (
-    <div className="md:w-[25vw] lg:w-[22vw] xl:w-[14vw]  bg-white flex flex-col items-center gap-2 p-2">
+    <div className="md:w-[25vw] lg:w-[22vw] xl:w-[14vw]  bg-white border-[1px] border-zinc-200 flex flex-col items-center gap-2 p-2">
       <div
         onMouseEnter={() => setisHovered(true)}
         onMouseLeave={() => setisHovered(false)}
@@ -14,7 +13,7 @@ const Card = ({ cardImage }) => {
         <img className="w-full h-full object-cover" src={cardImage} alt="" />
         {/* Image Hover */}
         <div
-          className={`absolute bottom-0 w-full h-full overflow-hidden bg-orange-500 bg-opacity-80 ${
+          className={`absolute bottom-0 w-full  overflow-hidden bg-orange-500 bg-opacity-80 ${
             ishovered
               ? "h-full grid grid-rows-2 grid-cols-2 gap-2 p-16 xl:p-14"
               : "h-0"
