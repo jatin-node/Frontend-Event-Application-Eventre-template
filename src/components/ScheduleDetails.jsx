@@ -42,7 +42,7 @@ const ScheduleDetails = () => {
         className="h-fit w-full p-[2%]"
       >
         {/* heading */}
-        <div className="w-full h-[12%] bg-orange-500 flex items-center px-10 text-sm md:text-2xl ">
+        <div className="w-full h-[10vh] bg-orange-500 flex items-center px-10 text-sm md:text-2xl ">
           <span className="w-[50%] md:w-[30%]">Time</span>
           <span className="w-[50%] md:w-[30%]">Speaker</span>
           <span className="w-[30%] hidden md:block">Subject</span>

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 // h-[10vh] xl:h-[15vh]
 const HomepageBanner = ({ scrollToTicketBuy }) => {
   return (
-    <div className="relative w-full overflow-x-hidden">
+    <div className="relative w-full select-none overflow-x-hidden">
       <div
         className="z-30 absolute top-0 left-0 w-full h-full bg-contain bg-no-repeat bg-left-top"
         style={{ backgroundImage: `url(${objectimage})` }}
@@ -28,7 +28,7 @@ const HomepageBanner = ({ scrollToTicketBuy }) => {
             02-05 July 2017 California
           </span>
           <button
-            className=" mt-[3%] font-serif uppercase px-[5%] py-[2%] bg-white hover:bg-[#ff6600] hover:text-white duration-300"
+            className=" mt-[15%] md:mt-[3%] font-serif uppercase px-[5%] py-[2%] bg-white hover:bg-[#ff6600] hover:text-white duration-300"
             onClick={scrollToTicketBuy}
           >
             <Link>get ticket now</Link>

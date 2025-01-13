@@ -5,7 +5,7 @@ const InfoBox = ({ icon, text, borderClasses }) => (
   <span
     className={`text-white flex flex-col gap-[5%] justify-center items-center ${borderClasses}`}
   >
-    <i className={`text-6xl ${icon}`}></i>
+    <i className={`text-4xl md:text-6xl ${icon}`}></i>
     <span className="uppercase text-xl">{text}</span>
   </span>
 );

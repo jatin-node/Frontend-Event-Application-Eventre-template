@@ -12,8 +12,8 @@ import TicketBuy from "../components/TicketBuy";
 import Footer from "../components/Footer";
 
 const Home = () => {
+  document.title = "Eventre"
   const ticketBuyRef = useRef(null);
-
   const scrollToTicketBuy = () => {
     ticketBuyRef.current.scrollIntoView({ behavior: "smooth" });
   };

@@ -5,14 +5,12 @@ import Footer from '../components/Footer'
 import EventSchedule from '../components/EventSchedule'
 
 const Schedule = () => {
+  document.title = "Eventre | Schedule"
   return (
     <div className='w-screen h-screen overflow-x-hidden'>
         <Navbar/>
         <PageNav title="event schedule"/>
         <EventSchedule download={true}/>
-
-
-
         <Footer/>
       
     </div>

@@ -5,14 +5,12 @@ import PageNav from '../components/PageNav'
 import Footer from '../components/Footer'
 
 const ConatctPage = () => {
+  document.title = "Eventre | Contact"
   return (
     <div className='w-screen h-screen overflow-x-hidden'>
         <Navbar/>
         <PageNav title="our speaker"/>
         <Contact/>
-
-
-
         <Footer/>
       
     </div>

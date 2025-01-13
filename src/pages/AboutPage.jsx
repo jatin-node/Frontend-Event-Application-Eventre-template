@@ -6,6 +6,7 @@ import Speakers from '../components/Speakers'
 import Aboutus from '../components/Aboutus'
 
 const AboutPage = () => {
+  document.title = "Eventre | AboutUs"
   return (
     <div className='w-screen h-screen overflow-x-hidden'>
         <Navbar/>
@@ -13,7 +14,6 @@ const AboutPage = () => {
         <Aboutus/>
         <Speakers showBackground={true}/>
         <Footer/>
-      
     </div>
   )
 }

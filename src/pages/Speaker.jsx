@@ -5,13 +5,13 @@ import Speakers from '../components/Speakers'
 import Footer from '../components/Footer'
 
 const Speaker = () => {
+  document.title = "Eventre | Speakers"
   return (
     <div className='w-screen h-screen overflow-x-hidden'>
         <Navbar/>
         <PageNav title="our speaker"/>
         <Speakers showBackground={false}/>
         <Footer/>
-      
     </div>
   )
 }

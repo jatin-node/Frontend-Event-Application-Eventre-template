@@ -16,7 +16,7 @@ const PageNav = ({title}) => {
         <div className="w-full h-full bg-indigo-950 opacity-75"></div>
       </div>
       <div className="absolute top-0 w-full h-full text-white flex flex-col gap-2 items-center justify-center">
-        <div className="text-5xl uppercase">{title}</div>
+        <div className="text-4xl uppercase text-nowrap">{title}</div>
         <div className="text-lg uppercase flex gap-1 items-center">
             <Link to="/" className="hover:text-orange-500">Home</Link>
             <i className="ri-arrow-right-s-line"></i>
